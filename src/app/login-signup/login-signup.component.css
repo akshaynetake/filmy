@@ -110,4 +110,6 @@
   margin-bottom: 50px;
   background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,86,1) 0%, rgba(131,58,180,1) 100%);
   border: none;
+  color: #FFFFFF;
+  font-weight: 600;
 }
