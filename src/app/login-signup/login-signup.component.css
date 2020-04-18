@@ -16,7 +16,7 @@
   margin: auto;
   padding: 20px;
   border: 3px #282828 solid;
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: rgba(0,0,0,.7);
 }
 .loginText{
@@ -104,12 +104,17 @@
   text-align: center;
 }
 .button {
-  padding: 5px 50px;
+  padding: 10px 65px;
   border-radius: 5px;
   margin-top: 20px;
-  margin-bottom: 50px;
   background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,86,1) 0%, rgba(131,58,180,1) 100%);
   border: none;
   color: #FFFFFF;
   font-weight: 600;
+}
+.login-button-container{
+  margin-top: 15px;
+}
+input:focus{
+  outline: none;
 }
