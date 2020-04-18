@@ -2,11 +2,11 @@
   <div class="card-container col-md-5 col-lg-5 col-xl-4">
     <div *ngIf="login">
       <div class="loginText">
-        <span>Sign in</span>
+        <span>Sign In</span>
         <div class="login-border-bottom"></div>
       </div>
       <div class="social-text">
-        <p>Enter via social network</p>
+        <span class="sub-text-color">Enter via social network</span>
       </div>
       <div style="display: flex; margin-left: 40px;">
         <div class="facebook-social-image-container">
@@ -20,7 +20,7 @@
         <div class="col left-gradient-container">
           <div class="left-gradient"></div>
         </div>
-        <div class="col countinue-text">Countinue with</div>
+        <div class="col countinue-text sub-text-color">Countinue with</div>
         <div class="col right-gradient-container">
           <div class="right-gradient"></div>
         </div>
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div style="margin-top: 20px;" class="email-container">
-          <img class="icon-placeholder" src="../../assets/enve.png" alt="">
+          <img class="icon-placeholder" src="../../assets/key-3.png" alt="">
           <div style="width: 100%; height: 2px;">
             <input class="text-input" type="password" placeholder="Password">
             <div style="margin-top: 10px;" class="row">
@@ -50,17 +50,17 @@
       <div class="wrapper">
         <button class="button">SIGN IN</button><br>
         <div class="login-button-container">
-          <label for="">Don't have Account?</label> <label style="color: #FFFFFF;" href="" (click)="visibleSignUp()">SIGN UP</label>
+          <label class="sub-text-color">Don't have Account?</label> <label class="sign-in-up-ratator" href="" (click)="visibleSignUp()">SIGN UP</label>
         </div>
       </div>
     </div>
     <div *ngIf="signup">
       <div class="loginText">
         <span>Sign Up</span>
-        <div class="login-border-bottom"></div>
+        <div class="signup-border-bottom"></div>
       </div>
       <div class="social-text">
-        <p>Enter via social network</p>
+        <span class="sub-text-color">Enter via social network</span>
       </div>
       <div style="display: flex; margin-left: 40px;">
         <div class="facebook-social-image-container">
@@ -74,7 +74,7 @@
         <div class="col left-gradient-container">
           <div class="left-gradient"></div>
         </div>
-        <div class="col countinue-text">Countinue with</div>
+        <div class="col countinue-text sub-text-color">Countinue with</div>
         <div class="col right-gradient-container">
           <div class="right-gradient"></div>
         </div>
@@ -111,7 +111,7 @@
           </div>
         </div>
         <div style="margin-top: 30px;" class="email-container">
-          <img class="icon-placeholder" src="../../assets/enve.png" alt="">
+          <img class="icon-placeholder" src="../../assets/key-3.png" alt="">
           <div style="width: 100%; height: 2px;">
             <input class="text-input" type="password" placeholder="Enter Password">
             <div style="margin-top: 10px;" class="row">
@@ -132,9 +132,9 @@
         </div>
       </div>
       <div class="wrapper">
-        <button class="button">SIGN IN</button><br>
+        <button class="button">SIGN UP</button><br>
         <div class="login-button-container">
-          <label for="">Don't have Account?</label> <label style="color: #FFFFFF;" href="" (click)="visibleLogin()">SIGN IN</label>
+          <label class="sub-text-color" for="">Already have Account?</label> <label class="sign-in-up-ratator" href="" (click)="visibleLogin()">SIGN IN</label>
         </div>
       </div>
     </div>

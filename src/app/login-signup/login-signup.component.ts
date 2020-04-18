@@ -17,13 +17,11 @@ export class LoginSignupComponent implements OnInit {
   }
 
   visibleSignUp(){
-    console.log("the sign up called");
     this.signup = true
     this.login = false
   }
 
   visibleLogin(){
-    console.log("the sign up called");
     this.signup = false
     this.login = true
   }
