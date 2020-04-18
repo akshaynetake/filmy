@@ -25,7 +25,7 @@
   width: 100%;
 }
 .login-border-bottom{
-  background-color:	#C71585;
+  background-color:	#cc2b5e;
   height: 5px;
   width: 90px;
   border-radius: 5px;
@@ -38,7 +38,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   width: 70px;
-  border-right: 2px #C71585 solid;
+  border-right: 2px #cc2b5e solid;
 }
 .google-social-image-container{
   padding-top: 10px;
@@ -65,7 +65,7 @@
   height: 2px;
   background: linear-gradient(
     to left,
-    #C71585,
+    #cc2b5e,
     rgba(255, 0, 0, 0)
   )
 }
@@ -77,13 +77,13 @@
   height: 2px;
   background: linear-gradient(
     to right,
-    #C71585,
+    #cc2b5e,
     rgba(255, 0, 0, 0)
   )
 }
 
 .text-field-container{
-  padding: 50px 16%;
+  padding: 50px 10%;
 }
 
 .icon-placeholder{
