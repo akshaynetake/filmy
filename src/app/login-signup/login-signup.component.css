@@ -9,9 +9,10 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  background-size: cover;
+  background-position: center;
 }
 .card-container{
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-weight: 400;
   margin: auto;
   padding: 20px;
@@ -22,6 +23,12 @@
 .sub-text-color{
   color: #596172 !important;
   font-size: 18px;
+}
+.futura{
+  font-family: Futura,Trebuchet MS,Arial,sans-serif !important;
+}
+.proxima-nova{
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .loginText{
   font-size: 30px;
@@ -99,16 +106,16 @@
 }
 
 .icon-placeholder{
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .text-input{
-  font-size: 18;
+  font-size: 18px;
   width: 100%;
   margin-left: 10px;
   background: transparent;
   border: none;
-  color: #596172 !important;
+  color: #FFFFFF !important;
 }
 .email-container{
   display: flex;
@@ -117,7 +124,7 @@
   text-align: center;
 }
 .sign-in-button {
-  padding: 12px 75px;
+  padding: 12px 121px;
   border-radius: 5px;
   margin-top: 20px;
   background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,86,1) 0%, rgba(131,58,180,1) 100%);
@@ -156,7 +163,7 @@ text-decoration: underline;
 
 @-webkit-keyframes autofill {
     0%,100% {
-        color: #666;
+        color: #FFFFFF;
         background: transparent;
     }
 }
@@ -165,4 +172,11 @@ input:-webkit-autofill {
     -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
     -webkit-animation-name: autofill;
     -webkit-animation-fill-mode: both;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }

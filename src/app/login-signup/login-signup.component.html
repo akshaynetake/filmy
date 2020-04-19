@@ -1,11 +1,11 @@
 <div class="backgroundImage">
-  <div class="card-container col-md-4 col-lg-4 col-xl-3">
+  <div class="card-container" style="width: 430px;">
     <div *ngIf="isLoginVisible">
-      <div class="loginText">
+      <div class="loginText futura">
         <span>Sign In</span>
         <div class="login-border-bottom"></div>
       </div>
-      <div class="social-text">
+      <div class="social-text proxima-nova">
         <span class="sub-text-color">Enter via social network</span>
       </div>
       <div style="display: flex; margin-left: 0px;">
@@ -20,12 +20,12 @@
         <div class="col left-gradient-container">
           <div class="left-gradient"></div>
         </div>
-        <div class="col countinue-text sub-text-color">Continue with</div>
+        <div class="col countinue-text sub-text-color proxima-nova">Continue with</div>
         <div class="col right-gradient-container">
           <div class="right-gradient"></div>
         </div>
       </div>
-      <div class="text-field-container">
+      <div class="text-field-container proxima-nova">
         <div class="email-container">
           <img class="icon-placeholder"  src="../../assets/enve.png" alt="">
           <div style="width: 100%;">
@@ -48,18 +48,18 @@
         </div>
       </div>
       <div class="wrapper">
-        <button class="sign-in-button"><span class="sign-in-button-text">SIGN IN</span></button><br>
-        <div class="login-button-container">
+        <button class="sign-in-button proxima-nova"><span class="sign-in-button-text">SIGN IN</span></button><br>
+        <div class="login-button-container proxima-nova">
           <label class="sub-text-color">Don't have Account?</label> <label class="sign-in-up-ratator" href="" (click)="visibleSignUp()">SIGN UP</label>
         </div>
       </div>
     </div>
     <div *ngIf="isSignupVisible">
-      <div class="loginText">
+      <div class="loginText futura">
         <span>Sign Up</span>
         <div class="signup-border-bottom"></div>
       </div>
-      <div class="social-text">
+      <div class="social-text proxima-nova">
         <span class="sub-text-color">Enter via social network</span>
       </div>
       <div style="display: flex; margin-left: 0px;">
@@ -74,14 +74,14 @@
         <div class="col left-gradient-container">
           <div class="left-gradient"></div>
         </div>
-        <div class="col countinue-text sub-text-color">Continue with</div>
+        <div class="col countinue-text sub-text-color proxima-nova">Continue with</div>
         <div class="col right-gradient-container">
           <div class="right-gradient"></div>
         </div>
       </div>
-      <div class="text-field-container">
+      <div class="text-field-container proxima-nova">
         <div class="email-container">
-          <img class="icon-placeholder"  src="../../assets/enve.png" alt="">
+          <img class="icon-placeholder" src="../../assets/user.png" alt="">
           <div style="width: 100%;">
             <input class="text-input" type="text" placeholder="Name">
             <div style="margin-top: 10px; height: 2px;" class="row">
@@ -121,9 +121,19 @@
           </div>
         </div>
         <div style="margin-top: 30px;" class="email-container">
-          <img class="icon-placeholder" src="../../assets/enve.png" alt="">
+          <img class="icon-placeholder" src="../../assets/key-3.png" alt="">
           <div style="width: 100%; height: 2px;">
-            <input class="text-input" type="text" placeholder="Mobile Number">
+            <input class="text-input" type="password" placeholder="Re-Enter Password">
+            <div style="margin-top: 10px;" class="row">
+              <span class="col left-gradient"></span>
+              <span class="col right-gradient"></span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 30px;" class="email-container">
+          <img class="icon-placeholder" src="../../assets/mobile.png" alt="">
+          <div style="width: 100%; height: 2px;">
+            <input class="text-input" type="number" placeholder="Mobile Number">
             <div style="margin-top: 10px;" class="row">
               <span class="col left-gradient"></span>
               <span class="col right-gradient"></span>
@@ -132,8 +142,8 @@
         </div>
       </div>
       <div class="wrapper">
-        <button class="sign-in-button"><span class="sign-in-button-text">SIGN UP</span></button><br>
-        <div class="login-button-container">
+        <button class="sign-in-button proxima-nova"><span class="sign-in-button-text">SIGN UP</span></button><br>
+        <div class="login-button-container proxima-nova">
           <label class="sub-text-color" for="">Already have Account?</label> <label class="sign-in-up-ratator" href="" (click)="visibleLogin()">SIGN IN</label>
         </div>
       </div>
