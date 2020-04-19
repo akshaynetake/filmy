@@ -58,8 +58,8 @@
   margin-left: 20px;
 }
 .social-icon{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .countinue-text-container{
   margin-top: 25px;
@@ -99,7 +99,7 @@
 
 .icon-placeholder{
   height: 30px;
-  width: 35px;
+  width: 30px;
 }
 .text-input{
   font-size: 18;
@@ -141,4 +141,21 @@ button:focus{
   margin-left: 10px;
   color: #cc2b5e;
   cursor: pointer;
+}
+
+.sign-in-up-ratator:hover {
+text-decoration: underline;
+}
+
+@-webkit-keyframes autofill {
+    0%,100% {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }
