@@ -1,6 +1,6 @@
 <div class="backgroundImage">
   <div class="card-container col-md-5 col-lg-5 col-xl-4">
-    <div *ngIf="login">
+    <div *ngIf="isLoginVisible">
       <div class="loginText">
         <span>Sign In</span>
         <div class="login-border-bottom"></div>
@@ -10,10 +10,10 @@
       </div>
       <div style="display: flex; margin-left: 0px;">
         <div class="facebook-social-image-container">
-          <img class="social-icon" src="../../assets/facebook.png" alt="">
+          <img class="social-icon" (click)="socialSignIn('facebook')" src="../../assets/facebook.png" alt="">
         </div>
         <div class="google-social-image-container">
-          <img class="social-icon" src="../../assets/google.svg" alt="">
+          <img class="social-icon" (click)="socialSignIn('google')" src="../../assets/google.svg" alt="">
         </div>
       </div>
       <div class="row countinue-text-container">
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div *ngIf="signup">
+    <div *ngIf="isSignupVisible">
       <div class="loginText">
         <span>Sign Up</span>
         <div class="signup-border-bottom"></div>
