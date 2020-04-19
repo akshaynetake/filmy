@@ -1,5 +1,5 @@
 .backgroundImage {
-  background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../assets/new-banner.jpg");
+  background-image: linear-gradient(rgba(21,28,37,0.7), rgba(21,28,37,0.7)), url("../../assets/new-banner.jpg");
   min-height: 100%;
   width: 100%;
   height: auto;
@@ -15,9 +15,9 @@
   font-weight: 400;
   margin: auto;
   padding: 20px;
-  border: 2px #181818 solid;
+  /* border: 2px #181818 solid; */
   border-radius: 8px;
-  background-color: rgba(0,0,0,0.55);
+  background-color: rgba(21,28,37,0.7);
 }
 .sub-text-color{
   color: #596172 !important;
