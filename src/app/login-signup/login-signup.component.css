@@ -17,7 +17,7 @@
   padding: 20px;
   border: 2px #181818 solid;
   border-radius: 8px;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,0.55);
 }
 .sub-text-color{
   color: #596172 !important;
@@ -115,15 +115,21 @@
 .wrapper {
   text-align: center;
 }
-.button {
+.sign-in-button {
   padding: 12px 75px;
   border-radius: 5px;
   margin-top: 20px;
   background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,86,1) 0%, rgba(131,58,180,1) 100%);
   border: none;
+}
+
+.sign-in-button-text
+{
   color: #FFFFFF;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
+
 .login-button-container{
   margin-top: 15px;
 }
