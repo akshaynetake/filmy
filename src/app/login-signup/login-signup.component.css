@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 .backgroundImage {
   background-image: linear-gradient(rgba(21,28,37,0.7), rgba(21,28,37,0.7)), url("../../assets/new-banner.jpg");
   min-height: 100%;
@@ -28,7 +29,7 @@
   font-family: Futura,Trebuchet MS,Arial,sans-serif !important;
 }
 .proxima-nova{
-  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Proxima Nova" !important;
 }
 .loginText{
   font-size: 30px;
