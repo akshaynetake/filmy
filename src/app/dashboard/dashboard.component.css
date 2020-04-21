@@ -3,11 +3,15 @@
     -moz-transform: scale(1.25);
     transform: scale(1.25);
     transform -y: ; */
-    -webkit-transform: scaleY(1.25);
-    -moz-transform: scaleY(1.25);
-    transform: scaleY(1.25);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: transform .5s;
 }
 
-.slick-center >img {
+/* .slick-center >img {
     height: 165px;
+} */
+::ng-deep.slick-list{
+    padding: 70px 0px !important;
 }
