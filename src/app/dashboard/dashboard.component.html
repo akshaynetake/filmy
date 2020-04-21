@@ -1,0 +1,8 @@
+<!-- You can now use your library component in app.component.html -->
+<div style="padding-top:100px">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="80%">
+    </div>
+  </ngx-slick-carousel>
+</div>
