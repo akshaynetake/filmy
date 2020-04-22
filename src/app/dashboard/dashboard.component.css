@@ -125,3 +125,15 @@
 {
     display: flex;
 }
+
+.sub-heading-for-sub-carosal{
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.sub-heading-for-sub-carosal-2{
+    color: #FFFFFF;
+}
+.more-container{
+    float: right;
+}

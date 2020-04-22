@@ -5,11 +5,21 @@
     <ngx-slick-carousel class="carousel main-carosal" #slickModal="slick-carousel" [config]="slideConfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
         <div style="padding: 2%; outline: none;">
-          <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+          <div class="corosal-image-container">
+            <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+            <div  *ngIf="slide['isTitleVisible']" class="dashboard-content-compact-div">
+              <span class="dashboard-content-compact-slide-title">slide_title</span>
+            </div>
+          </div>
           <!-- <div class="shadow-overlay shadow-banner"></div> -->
         </div>
       </div>
     </ngx-slick-carousel>
+
+    <div class="sub-heading-for-sub-carosal">
+      <span>Continue Watching</span>
+      <span class="more-container">More >></span>
+    </div>
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
@@ -36,6 +46,11 @@
         </div>
       </div>
     </ngx-slick-carousel>
+
+    <div class="sub-heading-for-sub-carosal-2">
+      <span>Latest Movies</span>
+      <span class="more-container">More >></span>
+    </div>
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">

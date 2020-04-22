@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
     "swipe": true,
     "centerMode":true,
     "centerPadding": '0px',
-    "dots": true,
+    "dots": false,
     // "prevArrow": false,
     // "nextArrow": false
 
