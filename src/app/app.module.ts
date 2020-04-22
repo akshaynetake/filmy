@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { HeaderComponent } from './header/header.component';
 // import { SocialLoginModule, AuthServiceConfig,GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
 
 //auth service social login config
@@ -30,7 +31,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
   declarations: [
     AppComponent,
     LoginSignupComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
