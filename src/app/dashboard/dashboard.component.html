@@ -7,7 +7,7 @@
         <div style="padding: 2%; outline: none;">
           <div class="corosal-image-container">
             <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
-            <div  *ngIf="slide['isTitleVisible']" class="dashboard-content-compact-div">
+            <div class="dashboard-content-compact-div">
               <span class="dashboard-content-compact-slide-title">slide_title</span>
             </div>
           </div>
@@ -33,11 +33,12 @@
             </div>
 
             <!-- on hover div -->
-            <div  *ngIf="!slide['isTitleVisible']" class="dashboard-content-detail-div">
+            <div style="width: 100%;"  *ngIf="!slide['isTitleVisible']" class="dashboard-content-detail-div">
               <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
               <div class="duration-div">
-                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/thanos.jpg" alt="">
+                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/circular.png" alt="">
                 <span style="float:left;" class="dashboard-content-detail-duration-title">129MIN</span>
+                <span style="float:right; margin-left: 40%;" class="dashboard-content-detail-quelity-title">HD</span>
               </div>
 
             </div>
