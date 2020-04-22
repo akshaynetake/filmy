@@ -12,7 +12,7 @@
 /* .slick-center >img {
     height: 165px;
 } */
-::ng-deep.slick-list{
+::ng-deep .slick-list{
     padding: 70px 0px !important;
 }
 
