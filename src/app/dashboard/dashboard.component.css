@@ -86,7 +86,7 @@
     position: relative;
     color: white;
     left: 10%;
-    font-size:16px;
+    font-size: 1.6vw;
 }
 
 
@@ -95,8 +95,8 @@
     position: relative;
     color: white;
     margin-left: 10%;
-    height: 20px;
-    width: 20px;
+    height: 30%;
+    width: 20%;
 
 }
 
@@ -109,7 +109,7 @@
 .dashboard-content-compact-slide-title
 {
     color:white;
-    font-size:16px;
+    font-size: 1.6vw;
     position: relative;
     left:10px;
 }
@@ -117,7 +117,8 @@
 
 .dashboard-content-detail-duration-title
 {
-    color:White
+    color:White;
+    font-size: 1.6vw;
 }
 
 
