@@ -13,11 +13,11 @@
     height: 165px;
 } */
 .main-carosal::ng-deep .slick-list{
-    padding: 70px 0px !important;
+    padding: 2% 0px !important;
 }
 
 .sub-carosal::ng-deep .slick-list{
-    padding: 25px 0px !important;
+    padding: 1% 0px !important;
 }
 
 /* this is the bottom bard css */
