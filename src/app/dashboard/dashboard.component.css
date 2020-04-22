@@ -67,3 +67,61 @@
 .carosal-banner-image{
     box-shadow: 0px 0px 3px #FFFFFF;
 }
+
+.dashboard-content-detail-div
+{
+    /* background-color: red; */
+    position:absolute;
+    bottom:5px
+}
+
+.dashboard-content-compact-div
+{
+    position:absolute;
+    bottom:10px
+}
+
+.dashboard-content-detail-title
+{
+    position: relative;
+    color: white;
+    left: 10%;
+    font-size:16px;
+}
+
+
+.dashboard-content-detail-clock-icon
+{
+    position: relative;
+    color: white;
+    margin-left: 10%;
+    height: 20px;
+    width: 20px;
+
+}
+
+
+.dashboard-content-slide-image
+{
+    filter: brightness(50%);
+}
+
+.dashboard-content-compact-slide-title
+{
+    color:white;
+    font-size:16px;
+    position: relative;
+    left:10px;
+}
+
+
+.dashboard-content-detail-duration-title
+{
+    color:White
+}
+
+
+.duration-div
+{
+    display: flex;
+}

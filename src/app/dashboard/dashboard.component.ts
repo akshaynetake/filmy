@@ -1,26 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, AfterContentInit, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  @ViewChild('slickModal') slickModal: SlickCarouselComponent;
 
   slides = [
-    {img: "http://placehold.it/350x150/000000"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"},
-    {img: "http://placehold.it/350x150/000000"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"},
+    {img: "http://placehold.it/350x150/000000",id:0,isTitleVisible:true},
+    {img: "http://placehold.it/350x150/111111",id:1,isTitleVisible:true},
+    {img: "http://placehold.it/350x150/333333",id:2,isTitleVisible:true},
+    {img: "http://placehold.it/350x150/666666",id:3,isTitleVisible:true},
+    {img: "http://placehold.it/350x150/333333",id:4,isTitleVisible:true},
+    {img: "http://placehold.it/350x150/666666",id:5,isTitleVisible:true}
   ];
   slideConfig = {
     "slidesToShow": 3,
@@ -53,5 +47,18 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  sliderHoverEntered(div : string){
+    console.log("mouse enter : " + div);
+    this.slides[div]['isTitleVisible'] = false
+ }
+
+ sliderHoverLeave(div : string){
+  console.log('mouse leave :' + div);
+  this.slides[div]['isTitleVisible'] = true
+}
+
+
+// id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])"
 
 }
