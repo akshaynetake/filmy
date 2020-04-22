@@ -16,6 +16,11 @@
     padding: 2% 0px !important;
 }
 
+::ng-deep .slick-active{
+    outline: none !important;
+}
+
+
 .sub-carosal::ng-deep .slick-list{
     padding: 1% 0px !important;
 }
