@@ -15,3 +15,22 @@
 ::ng-deep.slick-list{
     padding: 70px 0px !important;
 }
+
+
+.shadow-overlay
+{
+    margin: 10px;
+    outline: none;
+    position: absolute;
+    width: 93%;
+    height: 88%;
+    /* box-shadow: inset 0px 0px 0px 70px rgba(0,0,0,0.03)!important; */
+    /* box-shadow: 0 -70px 70px -10px inset grey; */
+    top: 0;
+    left: 0;
+}
+
+.shadow-banner
+{
+    box-shadow: 0 -40px 10px -4px inset rgba(0,0,0,0.1);
+}
