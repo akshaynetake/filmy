@@ -32,8 +32,8 @@ export class DashboardComponent implements OnInit {
     "centerMode":true,
     "centerPadding": '0px',
     "dots": true,
-    "prevArrow": false,
-    "nextArrow": false
+    // "prevArrow": false,
+    // "nextArrow": false
 
   };
   movieconfig = {
