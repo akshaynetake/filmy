@@ -1,28 +1,30 @@
 <!-- You can now use your library component in app.component.html -->
-<div style="padding-top:100px; padding-left: 3%; padding-right: 3%;">
-  <ngx-slick-carousel class="carousel main-carosal" #slickModal="slick-carousel" [config]="slideConfig">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <div style="padding: 2%; outline: none;">
-        <img style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
-        <!-- <div class="shadow-overlay shadow-banner"></div> -->
+<div>
+  <app-header></app-header>
+  <div style="padding-left: 3%; padding-right: 3%;">
+    <ngx-slick-carousel class="carousel main-carosal" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div style="padding: 2%; outline: none;">
+          <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+          <!-- <div class="shadow-overlay shadow-banner"></div> -->
+        </div>
       </div>
-    </div>
-  </ngx-slick-carousel>
-
-  <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <div style="padding: 10px; outline: none;">
-        <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+    </ngx-slick-carousel>
+  
+    <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div style="padding: 10px; outline: none;">
+          <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+        </div>
       </div>
-    </div>
-  </ngx-slick-carousel>
-
-  <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-      <div style="padding: 10px; outline: none;">
-        <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+    </ngx-slick-carousel>
+  
+    <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div style="padding: 10px; outline: none;">
+          <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+        </div>
       </div>
-    </div>
-  </ngx-slick-carousel>
-
+    </ngx-slick-carousel>
+  </div>
 </div>
