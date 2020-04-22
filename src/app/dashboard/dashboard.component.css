@@ -13,7 +13,7 @@
     height: 165px;
 } */
 .main-carosal::ng-deep .slick-list{
-    padding: 2% 0px !important;
+    padding: 3% 0px !important;
 }
 
 ::ng-deep .slick-active{
@@ -26,9 +26,12 @@
 }
 
 /* this is the bottom bard css */
+.style_prevu_kit{
+    box-shadow: 0px 0px 3px #FFFFFF;
+}
 .style_prevu_kit:hover
 {
-    box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 3px #FFFFFF;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.2);
@@ -58,4 +61,9 @@
 .shadow-banner
 {
     box-shadow: 0 -40px 10px -4px inset rgba(0,0,0,0.1);
+}
+
+
+.carosal-banner-image{
+    box-shadow: 0px 0px 3px #FFFFFF;
 }
