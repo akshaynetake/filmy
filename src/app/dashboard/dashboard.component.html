@@ -7,4 +7,13 @@
       </div>
     </div>
   </ngx-slick-carousel>
+
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="movieconfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <div style="padding: 10px; outline: none;">
+        <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+      </div>
+    </div>
+  </ngx-slick-carousel>
+
 </div>
