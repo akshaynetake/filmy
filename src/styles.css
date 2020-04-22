@@ -8,3 +8,9 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
 }
+
+
+.FILMY_DARK_BACKGROUND
+{
+  background-color: #151c25;
+}
