@@ -147,7 +147,10 @@
 
 .sub-heading-for-sub-carosal{
     color: #FFFFFF;
-    margin-top: 40px;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+    left: 10px;
 }
 
 .sub-heading-for-sub-carosal-2{

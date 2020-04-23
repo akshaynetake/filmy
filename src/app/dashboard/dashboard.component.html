@@ -23,7 +23,7 @@
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div style="padding: 4%; outline: none;">
+        <div style="padding: 4%;padding-top: 10%; outline: none;">
           <div id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])" class="style_prevu_kit">
             <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
 
