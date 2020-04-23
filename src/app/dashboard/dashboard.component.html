@@ -7,7 +7,7 @@
         <div style="padding: 2%; outline: none;">
           <div class="corosal-image-container">
             <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
-            <div class="dashboard-content-compact-div">
+            <div class="dashboard-content-compact-div-banner">
               <span class="dashboard-content-compact-slide-title">slide_title</span>
             </div>
           </div>
@@ -17,13 +17,13 @@
     </ngx-slick-carousel>
 
     <div class="sub-heading-for-sub-carosal">
-      <span>Continue Watching</span>
+      <span class="dashboard-category-title">Continue Watching</span>
       <span class="more-container">More >></span>
     </div>
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div style="padding: 10px; outline: none;">
+        <div style="padding: 4%; outline: none;">
           <div id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])" class="style_prevu_kit">
             <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
 
@@ -36,7 +36,7 @@
             <div style="width: 100%;"  *ngIf="!slide['isTitleVisible']" class="dashboard-content-detail-div">
               <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
               <div class="duration-div">
-                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/circular.png" alt="">
+                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock_pink.jpg" alt="">
                 <span style="float:left;" class="dashboard-content-detail-duration-title">129MIN</span>
                 <span style="float:right; margin-left: 40%;" class="dashboard-content-detail-quelity-title">HD</span>
               </div>
@@ -49,13 +49,13 @@
     </ngx-slick-carousel>
 
     <div class="sub-heading-for-sub-carosal-2">
-      <span>Latest Movies</span>
+      <span class="dashboard-category-title">Latest Movies</span>
       <span class="more-container">More >></span>
     </div>
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div style="padding: 10px; outline: none;">
+        <div style="padding: 4%; outline: none;">
           <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
         </div>
       </div>

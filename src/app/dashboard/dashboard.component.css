@@ -23,6 +23,7 @@
 
 .sub-carosal::ng-deep .slick-list{
     padding: 1% 0px !important;
+    padding-top: 0px !important;
 }
 
 /* this is the bottom bard css */
@@ -72,13 +73,20 @@
 {
     /* background-color: red; */
     position:absolute;
-    bottom:5px
+    /* bottom:5px; */
+    bottom: 3%;
 }
 
 .dashboard-content-compact-div
 {
     position:absolute;
-    bottom:10px
+    bottom:5%
+}
+
+.dashboard-content-compact-div-banner
+{
+    position:absolute;
+    bottom:5%
 }
 
 .dashboard-content-detail-title
@@ -86,7 +94,8 @@
     position: relative;
     color: white;
     left: 6%;
-    font-size:16px;
+    /* font-size:16px; */
+    font-size:1.2vw;
 }
 
 
@@ -95,8 +104,10 @@
     position: relative;
     color: white;
     margin-left: 6%;
-    height: 20px;
-    width: 20px;
+    /* height: 20px;
+    width: 20px; */
+    height: 15%;
+    width: 10%;
 
 }
 
@@ -109,7 +120,8 @@
 .dashboard-content-compact-slide-title
 {
     color:white;
-    font-size:16px;
+    /* font-size:16px; */
+    font-size:1.2vw;
     position: relative;
     left:10px;
 }
@@ -117,7 +129,8 @@
 
 .dashboard-content-detail-duration-title
 {
-    color:White
+    color:White;
+    font-size:1.2vw;
 }
 
 
@@ -136,6 +149,12 @@
 }
 .more-container{
     float: right;
+    cursor: pointer;
+}
+
+.dashboard-category-title
+{
+    font-size: 1.5vw;
 }
 
 .dashboard-content-detail-quelity-title{
@@ -143,4 +162,5 @@
     color: #FFFFFF;
     padding: 0% 3%;
     border-radius: 20px;
+    font-size: 1.0vw;
 }
