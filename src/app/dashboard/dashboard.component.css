@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-.slick-center{
+.main-carosal .slick-center{
     /* -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
@@ -9,6 +9,10 @@
     -moz-transform: scale(1.3);
     transform: scale(1.3);
     transition: transform .5s;
+}
+
+.main-carosal.slick-active{
+
 }
 
 /* .slick-center >img {
@@ -159,8 +163,8 @@
     color: #FFFFFF;
     margin-top: 20px;
     position: relative;
-    top: 20px;
-    left: 10px;
+    top: 10px;
+    left: 5px;
 }
 
 .sub-heading-for-sub-carosal-2{
