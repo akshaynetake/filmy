@@ -184,10 +184,11 @@
 }
 
 .dashboard-content-detail-quelity-title{
-    background-color: gray;
+    background-color: #673ab7;
     color: #FFFFFF;
     padding: 0% 3%;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 1.0vw;
+    vertical-align: baseline;
     font-family: "Roboto" !important;
 }
