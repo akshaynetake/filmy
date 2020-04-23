@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .nav-item.nav-link{
   color: #ffffff !important;
+  font-family: "Proxima Nova" !important;
 }
 .icon-text{
   margin-left: 8%;
