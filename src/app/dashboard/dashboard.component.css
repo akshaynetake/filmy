@@ -22,6 +22,16 @@
     outline: none !important;
 }
 
+/* ::ng-deep .slick-active .dashboard-content-compact-div-banner {
+    visibility: hidden !important;
+    opacity: 0;
+}
+
+::ng-deep .slick-center .dashboard-content-compact-div-banner {
+    visibility: visible !important;
+    opacity: 1;
+} */
+
 
 .sub-carosal::ng-deep .slick-list{
     padding: 1% 0px !important;

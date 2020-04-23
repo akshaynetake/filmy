@@ -1,5 +1,6 @@
 .nav-item.nav-link{
   color: #ffffff !important;
+  cursor: pointer;
 }
 .icon-text{
   margin-left: 8%;
@@ -7,4 +8,14 @@
 .user-profile-nav{
   border-radius: 50%;
   margin-left: 0.5rem;
+}
+
+.nav-item.nav-link.active
+{
+  color : #cc2b5e !important;
+}
+
+.navbar-brand
+{
+  cursor: pointer;
 }

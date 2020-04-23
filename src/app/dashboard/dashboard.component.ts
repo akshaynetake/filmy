@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
     "infinite": true,
     "loop":true,
     "speed": 400,
-    "swipe": true,
+    "swipe": false,
     "centerMode":true,
     "centerPadding": '0px',
     "dots": false,
