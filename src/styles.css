@@ -18,3 +18,13 @@ body {
 {
   background-color: #151c25;
 }
+
+
+.faded-gray-color{
+  color: #596172 !important;
+}
+
+
+.faded-white-color{
+  color: rgba(255, 255 ,255, 0.8)
+}
