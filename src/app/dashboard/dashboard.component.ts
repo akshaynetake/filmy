@@ -36,8 +36,8 @@ export class DashboardComponent implements OnInit {
     "centerMode":true,
     "centerPadding": '0px',
     "dots": false,
-    // "prevArrow": false,
-    // "nextArrow": false
+    "prevArrow": false,
+    "nextArrow": false
 
   };
   movieconfig = {
@@ -79,5 +79,13 @@ this.slides1[div]['isTitleVisible1'] = true
 
 
 // id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])"
+
+next() {
+  this.slickModal.slickNext();
+}
+
+prev() {
+  this.slickModal.slickPrev();
+}
 
 }
