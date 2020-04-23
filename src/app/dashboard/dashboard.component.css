@@ -65,6 +65,24 @@
     position: relative;
 }
 
+.slick-current .style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 3px #FFFFFF;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    /* transform: scale(1) !important; */
+    transform: scale3d(1.2,1.2,1) translate3d(8%,0,0) perspective(500px) !important;
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+}
+
 .shadow-overlay
 {
     margin: 10px;
@@ -196,10 +214,11 @@
 }
 
 .dashboard-content-detail-quelity-title{
-    background-color: gray;
+    background-color: #673ab7;
     color: #FFFFFF;
     padding: 0% 3%;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 1.0vw;
+    vertical-align: baseline;
     font-family: "Roboto" !important;
 }

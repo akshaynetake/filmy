@@ -32,12 +32,12 @@ export class DashboardComponent implements OnInit {
   };
   movieconfig = {
     "slidesToShow": 5,
-    "slidesToScroll": 1,
+    "slidesToScroll": 6,
     "infinite": false,
     "loop":false,
     "speed": 400,
     "swipe": true,
-    "centerPadding": '0px',
+    // "centerPadding": '0px',
     "dots": false,
     "prevArrow": false,
     "nextArrow": false
