@@ -14,6 +14,7 @@ export class LoginSignupComponent implements OnInit {
   isSignupVisible;
   currentUser = {};
   isDataLoading:any = false;
+  
   socialSignInUserData;
 
 
