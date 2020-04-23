@@ -108,7 +108,7 @@
 
 .dashboard-content-detail-title
 {
-    font-family: "Proxima Nova" !important;
+    font-family: "Roboto" !important;
     position: relative;
     color: white;
     left: 6%;
@@ -137,7 +137,7 @@
 
 .dashboard-content-compact-slide-title
 {
-    font-family: "Proxima Nova" !important;
+    font-family: "Roboto" !important;
     color:white;
     /* font-size:16px; */
     font-size:1.2vw;
@@ -148,7 +148,7 @@
 
 .dashboard-content-detail-duration-title
 {
-    font-family: "Proxima Nova" !important;
+    font-family: "Roboto" !important;
     color:White;
     font-size:1.2vw;
 }
@@ -177,7 +177,7 @@
 
 .dashboard-category-title
 {
-    font-family: "Proxima Nova" !important;
+    font-family: "Roboto" !important;
     font-size: 1.5vw;
 }
 
@@ -187,5 +187,5 @@
     padding: 0% 3%;
     border-radius: 20px;
     font-size: 1.0vw;
-    font-family: "Proxima Nova" !important;
+    font-family: "Roboto" !important;
 }
