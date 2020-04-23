@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .slick-center{
     /* -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
@@ -91,6 +93,7 @@
 
 .dashboard-content-detail-title
 {
+    font-family: "Proxima Nova" !important;
     position: relative;
     color: white;
     left: 6%;
@@ -119,6 +122,7 @@
 
 .dashboard-content-compact-slide-title
 {
+    font-family: "Proxima Nova" !important;
     color:white;
     /* font-size:16px; */
     font-size:1.2vw;
@@ -129,6 +133,7 @@
 
 .dashboard-content-detail-duration-title
 {
+    font-family: "Proxima Nova" !important;
     color:White;
     font-size:1.2vw;
 }
@@ -154,6 +159,7 @@
 
 .dashboard-category-title
 {
+    font-family: "Proxima Nova" !important;
     font-size: 1.5vw;
 }
 
@@ -163,4 +169,5 @@
     padding: 0% 3%;
     border-radius: 20px;
     font-size: 1.0vw;
+    font-family: "Proxima Nova" !important;
 }

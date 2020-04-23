@@ -1,4 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Proxima+Nova'); */
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .backgroundImage {
   background-image: linear-gradient(rgba(21,28,37,0.7), rgba(21,28,37,0.7)), url("../../assets/new-banner.jpg");
   min-height: 100%;
