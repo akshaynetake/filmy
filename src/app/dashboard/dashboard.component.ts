@@ -16,6 +16,16 @@ export class DashboardComponent implements OnInit {
     {img: "http://placehold.it/350x150/333333",id:4,isTitleVisible:true},
     {img: "http://placehold.it/350x150/666666",id:5,isTitleVisible:true}
   ];
+
+  slides1 = [
+    {img: "http://placehold.it/350x150/000000",id:0,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/111111",id:1,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/333333",id:2,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/666666",id:3,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/333333",id:4,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/666666",id:5,isTitleVisible1:true}
+  ];
+
   slideConfig = {
     "slidesToShow": 3,
     "slidesToScroll": 1,
@@ -56,6 +66,15 @@ export class DashboardComponent implements OnInit {
  sliderHoverLeave(div : string){
   console.log('mouse leave :' + div);
   this.slides[div]['isTitleVisible'] = true
+}
+sliderHoverEntered1(div : string){
+  console.log("mouse enter : " + div);
+  this.slides1[div]['isTitleVisible1'] = false
+}
+
+sliderHoverLeave1(div : string){
+console.log('mouse leave :' + div);
+this.slides1[div]['isTitleVisible1'] = true
 }
 
 
