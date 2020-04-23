@@ -9,6 +9,8 @@
     -moz-transform: scale(1.3);
     transform: scale(1.3);
     transition: transform .5s;
+    position: relative;
+    z-index: 9999;
 }
 
 .main-carosal.slick-active{
