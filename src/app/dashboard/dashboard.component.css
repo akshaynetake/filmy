@@ -18,6 +18,23 @@
     z-index: 9999;
 }
 
+.slick-center:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2%;
+    right: 2%;
+    bottom: 3.6%;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, transparent 25%, black 90%) !important;
+    /* background: linear-gradient(
+    to top,
+    black 100%,
+    transparent 25%
+  ); */
+  }
+
+
 
 ::ng-deep .sub-carosal .slick-list
 {
@@ -210,11 +227,26 @@
     height: 183px;
 } */
 
+.overlay{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 76%, black 242%);
+  }
+
 @media (min-width:1400px){
     .carosal-banner-image{
         box-shadow: 0px 0px 3px #FFFFFF;
         height: 260px;
-        opacity: 0.7;
+        /* opacity: 0.7; */
         /* object-fit: cover; */
     }
 
@@ -228,7 +260,7 @@
 @media (min-width:1200px) and (max-width:1399px){
     .carosal-banner-image{
         box-shadow: 0px 0px 3px #FFFFFF;
-        opacity: 0.7;
+        /* opacity: 0.7; */
         height: 200px;
         /* object-fit: cover; */
     }
@@ -242,7 +274,7 @@
 @media (min-width:800px) and (max-width:1199px){
     .carosal-banner-image{
         box-shadow: 0px 0px 3px #FFFFFF;
-        opacity: 0.7;
+        /* opacity: 0.7; */
         height: 160px;
         /* object-fit: cover; */
     }
@@ -256,7 +288,7 @@
 @media (min-width:600px) and (max-width:799px){
     .carosal-banner-image{
         box-shadow: 0px 0px 3px #FFFFFF;
-        opacity: 0.7;
+        /* opacity: 0.7; */
         height: 120px;
     }
     .dashboard-content-slide-image
@@ -269,7 +301,7 @@
 @media (min-width:400px) and (max-width:599px){
     .carosal-banner-image{
         box-shadow: 0px 0px 3px #FFFFFF;
-        opacity: 0.7;
+        /* opacity: 0.7; */
         height: 100px;
     }
     .dashboard-content-slide-image
@@ -282,7 +314,7 @@
 @media (min-width:200px) and (max-width:399px){
     .carosal-banner-image{
         box-shadow: 0px 0px 3px #FFFFFF;
-        opacity: 0.7;
+        /* opacity: 0.7; */
         height: 80px;
     }
     .dashboard-content-slide-image
@@ -394,6 +426,7 @@
     position: relative;
     left: 10%;
     opacity: 0.8;
+    z-index: 9;
 }
 
 
