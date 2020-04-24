@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+.filmy-navbar
+{
+  padding-top:2%;
+}
+
 .nav-item.nav-link{
   /* color: #ffffff !important; */
   font-family: "Roboto" !important;

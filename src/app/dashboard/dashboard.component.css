@@ -13,6 +13,12 @@
     z-index: 9999;
 }
 
+
+::ng-deep .sub-carosal .slick-list
+{
+    overflow: visible !important;
+}
+
 .main-carosal.slick-active{
 
 }
@@ -148,7 +154,9 @@
     position: relative;
 }
 
-.slick-active:nth-child(5n) .style_prevu_kit:hover
+
+
+/* .slick-active:nth-child(5n) .style_prevu_kit:hover
 {
     box-shadow: 0px 0px 3px #FFFFFF;
     z-index: 2;
@@ -159,12 +167,11 @@
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
-    /* transform: scale(1) !important; */
     transform: scale3d(1.2,1.2,1) translate3d(-8%,0,0)!important;
     max-width: 500px;
     max-height: 500px;
     position: relative;
-}
+} */
 
 .shadow-overlay
 {
