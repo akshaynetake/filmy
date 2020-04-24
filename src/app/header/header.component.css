@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .nav-item.nav-link{
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
+  font-family: "Roboto" !important;
+  cursor: pointer;
+  font-weight: 600;
 }
 .icon-text{
   margin-left: 8%;
 }
 .user-profile-nav{
   border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+.nav-item.nav-link.active
+{
+  color : #cc2b5e !important;
+}
+
+.navbar-brand
+{
+  cursor: pointer;
 }

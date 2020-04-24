@@ -1,4 +1,6 @@
-.slick-center{
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.main-carosal .slick-center{
     /* -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
@@ -7,6 +9,12 @@
     -moz-transform: scale(1.3);
     transform: scale(1.3);
     transition: transform .5s;
+    position: relative;
+    z-index: 9999;
+}
+
+.main-carosal.slick-active{
+
 }
 
 /* .slick-center >img {
@@ -20,11 +28,42 @@
     outline: none !important;
 }
 
+/* ::ng-deep .slick-active .dashboard-content-compact-div-banner {
+    visibility: hidden !important;
+    opacity: 0;
+}
+
+::ng-deep .slick-center .dashboard-content-compact-div-banner {
+    visibility: visible !important;
+    opacity: 1;
+} */
+
 
 .sub-carosal::ng-deep .slick-list{
     padding: 1% 0px !important;
+    padding-top: 0px !important;
+}
+::ng-deep .slick-prev{
+    left: 3%;
+    z-index: 999;
+    height: 40%;
+    width: 5%;
+    background: url('../../assets/arrow.svg');
 }
 
+::ng-deep .slick-next{
+    right: 3%;
+    z-index: 999;
+    height: 40%;
+    width: 5%;
+}
+
+::ng-deep.slick-next:before{
+    content: "";
+}
+::ng-deep.slick-prev:before{
+    content: "";
+}
 /* this is the bottom bard css */
 .style_prevu_kit{
     box-shadow: 0px 0px 3px #FFFFFF;
@@ -43,6 +82,25 @@
     transform: scale(1.2);
     max-width: 500px;
     max-height: 500px;
+    position: relative;
+}
+
+.slick-current .style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 3px #FFFFFF;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    /* transform: scale(1) !important; */
+    transform: scale3d(1.2,1.2,1) translate3d(8%,0,0) perspective(500px) !important;
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
 }
 
 .shadow-overlay
@@ -66,27 +124,48 @@
 
 .carosal-banner-image{
     box-shadow: 0px 0px 3px #FFFFFF;
+    opacity: 0.7;
+}
+
+.carosal-banner-image::before{
+}
+
+.corosal-image-container{
+    background: linear-gradient(
+    to top,
+    black,
+    grey
+  )
 }
 
 .dashboard-content-detail-div
 {
     /* background-color: red; */
     position:absolute;
-    bottom:5px
+    /* bottom:5px; */
+    bottom: 3%;
 }
 
 .dashboard-content-compact-div
 {
     position:absolute;
-    bottom:10px
+    bottom:5%
+}
+
+.dashboard-content-compact-div-banner
+{
+    position:absolute;
+    bottom:5%
 }
 
 .dashboard-content-detail-title
 {
+    font-family: "Roboto" !important;
     position: relative;
     color: white;
-    left: 10%;
-    font-size: 1.6vw;
+    left: 6%;
+    /* font-size:16px; */
+    font-size:1.2vw;
 }
 
 
@@ -94,9 +173,11 @@
 {
     position: relative;
     color: white;
-    margin-left: 10%;
-    height: 30%;
-    width: 20%;
+    margin-left: 6%;
+    /* height: 20px;
+    width: 20px; */
+    height: 15%;
+    width: 10%;
 
 }
 
@@ -108,8 +189,10 @@
 
 .dashboard-content-compact-slide-title
 {
+    font-family: "Roboto" !important;
     color:white;
-    font-size: 1.6vw;
+    /* font-size:16px; */
+    font-size:1.2vw;
     position: relative;
     left:10px;
 }
@@ -117,12 +200,71 @@
 
 .dashboard-content-detail-duration-title
 {
+    font-family: "Roboto" !important;
     color:White;
-    font-size: 1.6vw;
+    font-size:1.2vw;
 }
 
 
 .duration-div
 {
     display: flex;
+}
+
+.sub-heading-for-sub-carosal{
+    color: #FFFFFF;
+    display:flow-root;
+    position: relative;
+    top: 10px;
+    /* left: 5px; */
+}
+
+.sub-heading-for-sub-carosal-2{
+    color: #FFFFFF;
+}
+.more-container{
+    float: right;
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-family: "Roboto" !important;
+}
+
+.dashboard-category-title
+{
+    font-family: "Roboto" !important;
+    font-size: 1.5vw;
+    float: left;
+}
+
+.dashboard-content-detail-quelity-title{
+    background-color: #673ab7;
+    color: #FFFFFF;
+    padding: 1% 4%;
+    border-radius: 10vh;
+    font-size: 1vw;
+    vertical-align: baseline;
+    font-family: "Roboto" !important;
+}
+.next-custom-buttin-main-carosal{
+    width: 8%;
+    /* float: right; */
+    position: relative;
+    /* margin-top: -16%; */
+    cursor: pointer;
+    float: right;
+    margin-top: -17%;
+}
+.prev-custom-buttin-main-carosal{
+    width: 8%;
+    position: relative;
+    /* margin-top: -27.5%; */
+    transform: rotate(180deg);
+    cursor: pointer;
+    float: left;
+    margin-top: -17%;
+}
+
+.next-prev-arrow-div
+{
+    display: flow-root;
 }

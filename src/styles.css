@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
@@ -13,4 +17,14 @@ body {
 .FILMY_DARK_BACKGROUND
 {
   background-color: #151c25;
+}
+
+
+.faded-gray-color{
+  color: #596172 !important;
+}
+
+
+.faded-white-color{
+  color: rgba(255, 255 ,255, 0.8)
 }

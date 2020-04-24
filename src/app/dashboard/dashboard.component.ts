@@ -16,28 +16,38 @@ export class DashboardComponent implements OnInit {
     {img: "http://placehold.it/350x150/333333",id:4,isTitleVisible:true},
     {img: "http://placehold.it/350x150/666666",id:5,isTitleVisible:true}
   ];
+
+  slides1 = [
+    {img: "http://placehold.it/350x150/000000",id:0,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/111111",id:1,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/333333",id:2,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/666666",id:3,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/333333",id:4,isTitleVisible1:true},
+    {img: "http://placehold.it/350x150/666666",id:5,isTitleVisible1:true}
+  ];
+
   slideConfig = {
     "slidesToShow": 3,
     "slidesToScroll": 1,
     "infinite": true,
     "loop":true,
     "speed": 400,
-    "swipe": true,
+    "swipe": false,
     "centerMode":true,
     "centerPadding": '0px',
-    "dots": true,
-    // "prevArrow": false,
-    // "nextArrow": false
+    "dots": false,
+    "prevArrow": false,
+    "nextArrow": false
 
   };
   movieconfig = {
     "slidesToShow": 5,
-    "slidesToScroll": 1,
+    "slidesToScroll": 6,
     "infinite": false,
     "loop":false,
     "speed": 400,
     "swipe": true,
-    "centerPadding": '0px',
+    // "centerPadding": '0px',
     "dots": false,
     "prevArrow": false,
     "nextArrow": false
@@ -57,8 +67,25 @@ export class DashboardComponent implements OnInit {
   console.log('mouse leave :' + div);
   this.slides[div]['isTitleVisible'] = true
 }
+sliderHoverEntered1(div : string){
+  console.log("mouse enter : " + div);
+  this.slides1[div]['isTitleVisible1'] = false
+}
+
+sliderHoverLeave1(div : string){
+console.log('mouse leave :' + div);
+this.slides1[div]['isTitleVisible1'] = true
+}
 
 
 // id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])"
+
+next() {
+  this.slickModal.slickNext();
+}
+
+prev() {
+  this.slickModal.slickPrev();
+}
 
 }

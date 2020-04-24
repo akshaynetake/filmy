@@ -5,42 +5,84 @@
     <ngx-slick-carousel class="carousel main-carosal" #slickModal="slick-carousel" [config]="slideConfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
         <div style="padding: 2%; outline: none;">
-          <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+          <div class="corosal-image-container">
+            <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+            <div class="dashboard-content-compact-div-banner">
+              <span class="dashboard-content-compact-slide-title">slide_title</span>
+            </div>
+          </div>
           <!-- <div class="shadow-overlay shadow-banner"></div> -->
         </div>
       </div>
     </ngx-slick-carousel>
+    <div class="next-prev-arrow-div">
+      <img class="prev-custom-buttin-main-carosal" src="../../assets/arrow.svg" (click)="prev()">
+      <img class="next-custom-buttin-main-carosal" src="../../assets/arrow.svg" (click)="next()">
+    </div>
+
+  </div>
+
+  <div style="padding-left: 3%; padding-right: 3%;">
+    <div class="sub-heading-for-sub-carosal">
+      <span class="dashboard-category-title faded-white-color">Continue Watching</span>
+      <span class="more-container faded-white-color">More >></span>
+    </div>
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div style="padding: 10px; outline: none;">
+        <div style="padding: 4%;padding-top: 10%; outline: none;">
           <div id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])" class="style_prevu_kit">
             <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
-
+  
             <!-- normal div -->
             <div  *ngIf="slide['isTitleVisible']" class="dashboard-content-compact-div">
-              <span class="dashboard-content-compact-slide-title">slide_title</span>
+              <span class="dashboard-content-compact-slide-title faded-white-color">slide_title</span>
             </div>
-
+  
             <!-- on hover div -->
-            <div  *ngIf="!slide['isTitleVisible']" class="dashboard-content-detail-div">
+            <div style="width: 100%;"  *ngIf="!slide['isTitleVisible']" class="dashboard-content-detail-div">
               <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
               <div class="duration-div">
-                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/thanos.jpg" alt="">
-                <span style="float:left;" class="dashboard-content-detail-duration-title">129MIN</span>
+                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock_pink.jpg" alt="">
+                <span style="float:left;" class="dashboard-content-detail-duration-title">129 Min</span>
+                <span style="float:right; margin-left: 40%;" class="dashboard-content-detail-quelity-title">HD</span>
               </div>
-
+  
             </div>
           </div>
-
+  
         </div>
       </div>
     </ngx-slick-carousel>
   
+    <div class="sub-heading-for-sub-carosal">
+      <span class="dashboard-category-title faded-white-color">Latest Movies</span>
+      <span class="more-container faded-white-color">More >></span>
+    </div>
+  
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
-      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div style="padding: 10px; outline: none;">
-          <img class="style_prevu_kit" style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+      <div ngxSlickItem *ngFor="let slide of slides1" class="slide">
+        <div style="padding: 4%;padding-top: 10%; outline: none;">
+          <div id="slide['id']" (mouseenter) ="sliderHoverEntered1(slide['id']) " (mouseleave) ="sliderHoverLeave1(slide['id'])" class="style_prevu_kit">
+            <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+  
+            <!-- normal div -->
+            <div  *ngIf="slide['isTitleVisible1']" class="dashboard-content-compact-div">
+              <span class="dashboard-content-compact-slide-title faded-white-color">slide_title</span>
+            </div>
+  
+            <!-- on hover div -->
+            <div style="width: 100%;"  *ngIf="!slide['isTitleVisible1']" class="dashboard-content-detail-div">
+              <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
+              <div class="duration-div">
+                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock_pink.jpg" alt="">
+                <span style="float:left;" class="dashboard-content-detail-duration-title">129 Min</span>
+                <span style="float:right; margin-left: 40%;" class="dashboard-content-detail-quelity-title">HD</span>
+              </div>
+  
+            </div>
+          </div>
+  
         </div>
       </div>
     </ngx-slick-carousel>
