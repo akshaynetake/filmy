@@ -55,7 +55,8 @@ export class DashboardComponent implements OnInit {
       img: "https://images.unsplash.com/photo-1519602857797-2d5beada21f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       id: 0,
       isTitleVisible: true,
-      movie_title: "Endgame"
+      movie_title: "Endgame",
+      duration:"180min"
     },
   ];
 
