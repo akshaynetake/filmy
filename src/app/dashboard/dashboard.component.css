@@ -88,7 +88,7 @@
 
 .dashboard-content-detail-div
 {
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .style_prevu_kit:hover > .dashboard-content-detail-div
