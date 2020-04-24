@@ -278,6 +278,11 @@
 }
 
 
+.slick-slide
+{
+    outline: none;
+}
+
 
 .carosal-banner-image::before{
 }
