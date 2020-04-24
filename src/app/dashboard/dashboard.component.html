@@ -30,7 +30,7 @@
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div style="padding: 4%;padding-top: 10%; outline: none;">
+        <div class="carousel-slide-container" >
           <div id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])" class="style_prevu_kit">
             <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
   
@@ -43,7 +43,7 @@
             <div style="width: 100%;"  *ngIf="!slide['isTitleVisible']" class="dashboard-content-detail-div">
               <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
               <div class="duration-div">
-                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock_pink.jpg" alt="">
+                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock-xxl.png" alt="">
                 <span style="float:left;" class="dashboard-content-detail-duration-title">129 Min</span>
                 <span style="float:right; margin-left: 40%;" class="dashboard-content-detail-quelity-title">HD</span>
               </div>
@@ -62,7 +62,7 @@
   
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides1" class="slide">
-        <div style="padding: 4%;padding-top: 10%; outline: none;">
+        <div class="carousel-slide-container">
           <div id="slide['id']" (mouseenter) ="sliderHoverEntered1(slide['id']) " (mouseleave) ="sliderHoverLeave1(slide['id'])" class="style_prevu_kit">
             <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
   
@@ -75,7 +75,7 @@
             <div style="width: 100%;"  *ngIf="!slide['isTitleVisible1']" class="dashboard-content-detail-div">
               <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
               <div class="duration-div">
-                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock_pink.jpg" alt="">
+                <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock-xxl.png" alt="">
                 <span style="float:left;" class="dashboard-content-detail-duration-title">129 Min</span>
                 <span style="float:right; margin-left: 40%;" class="dashboard-content-detail-quelity-title">HD</span>
               </div>

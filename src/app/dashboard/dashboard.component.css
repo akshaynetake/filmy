@@ -85,6 +85,12 @@
     position: relative;
 }
 
+/* .slick-current
+{
+    padding-left: 1% !important;
+} */
+
+
 .slick-current .style_prevu_kit:hover
 {
     box-shadow: 0px 0px 3px #FFFFFF;
@@ -286,4 +292,10 @@
 .next-prev-arrow-div
 {
     display: flow-root;
+}
+
+
+.carousel-slide-container
+{
+    padding: 4%;padding-top: 10%; padding-left: 1%;outline: none;
 }
