@@ -6,9 +6,9 @@
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
         <div style="padding: 2%; outline: none;">
           <div class="corosal-image-container">
-            <img class="carosal-banner-image" style="border-radius: 6px;" src="../../assets/thanos.jpg" alt="" width="100%">
+            <img class="carosal-banner-image" style="border-radius: 6px;" [src]=slide.img alt="" width="100%">
             <div class="dashboard-content-compact-div-banner">
-              <span class="dashboard-content-compact-slide-title">slide_title</span>
+              <span class="dashboard-content-compact-slide-title">{{slide['movie_title']}}</span>
             </div>
           </div>
           <!-- <div class="shadow-overlay shadow-banner"></div> -->
@@ -31,8 +31,8 @@
     <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" [config]="movieconfig">
       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
         <div class="carousel-slide-container" >
-          <div id="slide['id']" (mouseenter) ="sliderHoverEntered(slide['id']) " (mouseleave) ="sliderHoverLeave(slide['id'])" class="style_prevu_kit">
-            <img class="dashboard-content-slide-image"  style="border-radius: 6px;" src="../../assets/banner.jpg" alt="" width="100%">
+          <div class="style_prevu_kit">
+            <img class="dashboard-content-slide-image"  style="border-radius: 6px;" [src]=slide.img alt="" width="100%">
   
             <!-- normal div -->
             <div class="dashboard-content-compact-div">
@@ -42,10 +42,10 @@
             <!-- on hover div -->
             <div class="dashboard-content-detail-div">
               <img class="dashboard-content-detail-play-icon" src="../../assets/play-xxl.png" alt="">
-              <span class="dashboard-content-detail-title" >Zoomed_title_here</span>
+              <span class="dashboard-content-detail-title" >{{slide['movie_title']}}</span>
               <div class="duration-div">
                 <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock-xxl.png" alt="">
-                <span style="float:left;" class="dashboard-content-detail-duration-title">129 Min</span>
+                <span style="float:left;" class="dashboard-content-detail-duration-title">{{slide['duration']}}</span>
                 <span class="dashboard-content-detail-quality-title">HD</span>
               </div>
   
