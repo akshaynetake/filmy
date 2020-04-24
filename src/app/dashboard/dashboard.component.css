@@ -67,7 +67,7 @@
 /* this is the bottom bard css */
 .style_prevu_kit{
     box-shadow: 0px 0px 3px #FFFFFF;
-
+    border-radius: 6px;
     /* box-shadow: 0px 0px 3px #FFFFFF;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
@@ -364,4 +364,5 @@
 .carousel-slide-container
 {
     padding: 4%;padding-top: 10%; padding-left: 1%;outline: none;
+    border-radius: 6px;
 }
