@@ -109,7 +109,7 @@
 
 .dashboard-content-compact-div
 {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 
@@ -374,11 +374,11 @@
 .dashboard-content-compact-slide-title
 {
     font-family: "Roboto" !important;
-    color:white;
-    /* font-size:16px; */
-    font-size:1.2vw;
+    color: white;
+    font-size: 1.4vw;
     position: relative;
-    left:10px;
+    left: 10%;
+    opacity: 0.8;
 }
 
 
