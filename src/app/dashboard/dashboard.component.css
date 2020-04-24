@@ -67,7 +67,46 @@
 /* this is the bottom bard css */
 .style_prevu_kit{
     box-shadow: 0px 0px 3px #FFFFFF;
+
+    /* box-shadow: 0px 0px 3px #FFFFFF;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+    max-width: 500px;
+    max-height: 500px;
+    position: relative; */
+
+
+
 }
+
+.dashboard-content-detail-div
+{
+    /* visibility: hidden; */
+}
+
+.style_prevu_kit:hover > .dashboard-content-detail-div
+{
+    visibility: visible;
+}
+
+.style_prevu_kit:hover > .dashboard-content-compact-div
+{
+    visibility: hidden;
+}
+
+.dashboard-content-compact-div
+{
+    visibility: hidden;
+}
+
+
 .style_prevu_kit:hover
 {
     box-shadow: 0px 0px 3px #FFFFFF;
@@ -103,7 +142,7 @@
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     /* transform: scale(1) !important; */
-    transform: scale3d(1.2,1.2,1) translate3d(8%,0,0) perspective(500px) !important;
+    transform: scale3d(1.2,1.2,1) translate3d(8%,0,0)!important;
     max-width: 500px;
     max-height: 500px;
     position: relative;
@@ -165,10 +204,13 @@
 
 .dashboard-content-detail-div
 {
-    /* background-color: red; */
-    position:absolute;
-    /* bottom:5px; */
-    bottom: 3%;
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    margin-left: 5%;
+    /* height: 100%; */
+    /* top:55%; */
+    /* margin-left: 5%; */
 }
 
 .dashboard-content-compact-div
@@ -188,7 +230,7 @@
     font-family: "Roboto" !important;
     position: relative;
     color: white;
-    left: 6%;
+    /* left: 6%; */
     /* font-size:16px; */
     font-size:1.2vw;
 }
@@ -198,12 +240,28 @@
 {
     position: relative;
     color: white;
-    margin-left: 6%;
+    /* margin-left: 6%; */
+    margin-top: 1%;
+/* 
+    height: 20px;
+    width: 20px; */
+    width: 8%;
+    height: 8%;
+
+}
+
+
+.dashboard-content-detail-play-icon
+{
+    position: relative;
+    color: white;
     /* height: 20px;
     width: 20px; */
-    height: 15%;
+    float: right;
+    margin-right: 10%;
+    margin-top: -15%;
     width: 10%;
-
+    height: 10%;
 }
 
 
@@ -228,12 +286,14 @@
     font-family: "Roboto" !important;
     color:White;
     font-size:1.2vw;
+    margin-left: 2%;
 }
 
 
 .duration-div
 {
-    display: flex;
+    /* display: flex; */
+    display: flow-root;
 }
 
 .sub-heading-for-sub-carosal{
@@ -261,14 +321,20 @@
     float: left;
 }
 
-.dashboard-content-detail-quelity-title{
+.dashboard-content-detail-quality-title{
     background-color: #673ab7;
     color: #FFFFFF;
-    padding: 1% 4%;
-    border-radius: 10vh;
-    font-size: 1vw;
+    /* padding: 1px 10px; */
+    /* padding: 0.5vw 0.5vw; */
+    border-radius: 0.2rem;
+    font-size: 0.8vw;
     vertical-align: baseline;
     font-family: "Roboto" !important;
+    float: right;
+    margin-right:10%;
+    padding: 0.15rem 0.4rem;
+    
+    /* visibility: hidden; */
 }
 .next-custom-buttin-main-carosal{
     width: 8%;
