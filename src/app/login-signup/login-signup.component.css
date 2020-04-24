@@ -1,6 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css?family=Proxima+Nova'); */
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face{
+  font-family: "proxima";
+  src: url("../../assets/fonts/proxima.otf");
+}
+
 .backgroundImage {
   background-image: linear-gradient(rgba(21,28,37,0.7), rgba(21,28,37,0.7)), url("../../assets/new-banner.jpg");
   min-height: 100%;
@@ -31,7 +36,7 @@
   font-family: Futura,Trebuchet MS,Arial,sans-serif !important;
 }
 .proxima-nova{
-  font-family: "Roboto" !important;
+  font-family: "proxima" !important;
 }
 .loginText{
   font-size: 30px;
