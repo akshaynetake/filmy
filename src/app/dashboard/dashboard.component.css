@@ -213,6 +213,7 @@
 
 .sub-heading-for-sub-carosal{
     color: #FFFFFF;
+    display:flow-root;
     position: relative;
     top: 10px;
     /* left: 5px; */
@@ -224,12 +225,15 @@
 .more-container{
     float: right;
     cursor: pointer;
+    font-size: 1.5vw;
+    font-family: "Roboto" !important;
 }
 
 .dashboard-category-title
 {
     font-family: "Roboto" !important;
     font-size: 1.5vw;
+    float: left;
 }
 
 .dashboard-content-detail-quelity-title{
@@ -242,17 +246,25 @@
     font-family: "Roboto" !important;
 }
 .next-custom-buttin-main-carosal{
-    height: 10vh;
-    float: right;
+    width: 8%;
+    /* float: right; */
     position: relative;
-    margin-top: -16%;
+    /* margin-top: -16%; */
     cursor: pointer;
+    float: right;
+    margin-top: -17%;
 }
 .prev-custom-buttin-main-carosal{
-    height: 10vh;
+    width: 8%;
     position: relative;
-    margin-top: -27.5%;
+    /* margin-top: -27.5%; */
     transform: rotate(180deg);
     cursor: pointer;
+    float: left;
+    margin-top: -17%;
 }
 
+.next-prev-arrow-div
+{
+    display: flow-root;
+}
