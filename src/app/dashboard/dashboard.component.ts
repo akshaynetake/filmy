@@ -84,7 +84,7 @@ export class DashboardComponent implements OnInit {
   };
   movieconfig = {
     "slidesToShow": 5,
-    "slidesToScroll": 6,
+    "slidesToScroll": 1,
     "infinite": false,
     "loop": false,
     "speed": 400,
