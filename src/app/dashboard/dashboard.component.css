@@ -379,7 +379,7 @@ background: linear-gradient(to bottom, transparent 25%, black 90%) !important; *
 .dashboard-content-compact-div
 {
     position:absolute;
-    bottom:5%;
+    bottom:7%;
     width: 13%;
 }
 
@@ -458,7 +458,7 @@ background: linear-gradient(to bottom, transparent 25%, black 90%) !important; *
     color:white;
     font-size: 1.4vw;
     /* position: relative; */
-    margin-left: 10%;
+    margin-left: 5%;
     opacity: 0.8;
     z-index: 9;
 }
