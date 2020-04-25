@@ -8,6 +8,13 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HeaderComponent } from './header/header.component';
+import {VgCoreModule} from 'videogular2/compiled/core';
+import {VgControlsModule} from 'videogular2/compiled/controls';
+import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
+import {VgBufferingModule} from 'videogular2/compiled/buffering';
+import { VgStreamingModule } from 'videogular2/compiled/streaming';
+import { VideopocComponent } from './videopoc/videopoc.component';
+
 // import { SocialLoginModule, AuthServiceConfig,GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
 
 //auth service social login config
@@ -32,12 +39,18 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     LoginSignupComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    VideopocComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
+    VgStreamingModule
     // SocialLoginModule
   ],
   providers: [

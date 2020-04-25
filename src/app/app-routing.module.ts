@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import {LoginSignupComponent} from './login-signup/login-signup.component'
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { VideopocComponent } from './videopoc/videopoc.component';
 import { from } from 'rxjs';
 
 const routes: Routes = [
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: 'video',
+    component: VideopocComponent,
   },
   { path: '**', redirectTo: 'login' }
 ];
