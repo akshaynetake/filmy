@@ -154,10 +154,16 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     $(document).ready(function() {
-      $('.sub-carosal  .slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
     });
-
   }
+
+  ngAfterViewInit() {
+      for(var i = 0 ; i < this.slides1.length ;i++){
+        $('.' + this.slides1[i].class).find('.slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
+        $('.' + this.slides1[i].class).find('.slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
+      }
+  }
+
   afterChange(slidehcangeEvent){
   console.log();
     for(var i = 0 ; i < this.slides1.length ;i++){
