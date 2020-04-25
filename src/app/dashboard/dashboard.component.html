@@ -29,13 +29,13 @@
     <!-- <div class="trays-container">
         <div class="trays"> -->
 
-            <!-- <div *ngFor="let masterslide of slides1"> -->
+            <div *ngFor="let masterslide of slides1">
             <div class="sub-heading-for-sub-carosal">
-                <span class="dashboard-category-title faded-white-color">Continue Watching</span>
+                <span class="dashboard-category-title faded-white-color">{{masterslide.title}}</span>
                 <span class="more-container faded-white-color">More >></span>
               </div>
             
-              <ngx-slick-carousel class="carousel sub-carosal " #slickModal="slick-carousel" (afterChange)="afterChange($event)" [config]="movieconfig">
+              <ngx-slick-carousel class="carousel sub-carosal {{masterslide.class}}" #slickModal="slick-carousel" (afterChange)="afterChange($event)" [config]="movieconfig">
                 <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                   <div class="carousel-slide-container" >
                     <div class="style_prevu_kit">
@@ -62,7 +62,7 @@
                   </div>
                 </div>
               </ngx-slick-carousel>
-            <!-- </div> -->
+            </div>
         <!-- </div>
     </div> -->
 

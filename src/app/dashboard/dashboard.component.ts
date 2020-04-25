@@ -159,34 +159,30 @@ export class DashboardComponent implements OnInit {
 
   }
   afterChange(slidehcangeEvent){
-    console.log('slidehcangeEvent: ', slidehcangeEvent);
-
-
-
-    // for(var i = 0 ; i < this.slides1.length ;i++){
-    //   $('.' + this.slides1[i].class + '.slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
-    //   $('.' + this.slides1[i].class + '.slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
-    // }
-
-    $('.sub-carosal  .slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
-    $('.sub-carosal  .slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
+  console.log();
+    for(var i = 0 ; i < this.slides1.length ;i++){
+      $('.' + this.slides1[i].class).find('.slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
+      $('.' + this.slides1[i].class).find('.slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
+    }
+    // $('.sub-carosal  .slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
+    // $('.sub-carosal  .slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
   }
   // sliderHoverEntered(div: string) {
-  //   console.log("mouse enter : " + div);
+  //   
   //   this.slides[div]['isTitleVisible'] = false
   // }
 
   // sliderHoverLeave(div: string) {
-  //   console.log('mouse leave :' + div);
+  //   
   //   this.slides[div]['isTitleVisible'] = true
   // }
   // sliderHoverEntered1(div: string) {
-  //   console.log("mouse enter : " + div);
+  //   
   //   this.slides1[div]['isTitleVisible1'] = false
   // }
 
   // sliderHoverLeave1(div: string) {
-  //   console.log('mouse leave :' + div);
+  //   
   //   this.slides1[div]['isTitleVisible1'] = true
   // }
 
