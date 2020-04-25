@@ -254,13 +254,26 @@ background: linear-gradient(to bottom, transparent 25%, black 90%) !important; *
     background: linear-gradient(to bottom, transparent 76%, black 242%);
 
 
-    content: '';
+    /* content: '';
     position: absolute;
     top: 0;
     left: 2%;
     right: 2%;
     border-radius: 6px;
-    bottom: 4%;;
+    bottom: 4%;; */
+
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 16.77%;
+    /* left: 240px; */
+    right: 66.77%;
+    border-radius: 7px;
+    bottom: 3.6%;
+    /* background: red; */
+
+
 
   }
 

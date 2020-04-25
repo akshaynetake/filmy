@@ -73,7 +73,7 @@ export class DashboardComponent implements OnInit {
     "slidesToShow": 3,
     "slidesToScroll": 1,
     "infinite": true,
-    "loop": true,
+    "loop": false,
     "speed": 400,
     "swipe": false,
     "centerMode": true,
