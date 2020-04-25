@@ -550,22 +550,20 @@ background: linear-gradient(to bottom, transparent 25%, black 90%) !important; *
     /* visibility: hidden; */
 }
 .next-custom-buttin-main-carosal{
-    width: 8%;
-    /* float: right; */
+    width: 6%;
     position: relative;
-    /* margin-top: -16%; */
     cursor: pointer;
     float: right;
-    margin-top: -17%;
+    margin-top: -15%;
+
 }
 .prev-custom-buttin-main-carosal{
-    width: 8%;
+    width: 6%;
     position: relative;
-    /* margin-top: -27.5%; */
     transform: rotate(180deg);
     cursor: pointer;
     float: left;
-    margin-top: -17%;
+    margin-top: -15%;
 }
 
 .next-prev-arrow-div
