@@ -61,6 +61,59 @@ export class DashboardComponent implements OnInit {
     },
   ];
 
+
+  slides2 = [
+    {
+      img: "https://images.unsplash.com/photo-1535221540442-5bdde49e727c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "Iron man",
+      duration:"160min"
+    },
+    {
+      img: "https://images.unsplash.com/photo-1536982942848-09777d0cd8f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "KGF",
+      duration:"105min"
+    },
+    {
+      img: "https://images.unsplash.com/photo-1519602857797-2d5beada21f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "Endgame",
+      duration:"180min"
+    },
+    {
+      img: "https://m.media-amazon.com/images/M/MV5BNjVkZDQ1OGUtOTBkYi00YWFjLWFkZGEtN2U4MjIxZjcwZmUzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL50_SY1000_CR0,0,1503,1000_AL_.jpg",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "Avengers",
+      duration:"150min"
+    },
+    {
+      img: "https://images.unsplash.com/photo-1488272690691-2636704d6000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "Thor",
+      duration:"92min"
+    },
+    {
+      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "Doctor Strange",
+      duration:"75min"
+    },
+    {
+      img: "https://images.unsplash.com/photo-1520170851591-43094f4d218e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      id: 0,
+      isTitleVisible: true,
+      movie_title: "Captain America",
+      duration:"118min"
+    },
+  ];
+
   slides1 = [
     { img: "http://placehold.it/350x150/000000", id: 0, isTitleVisible1: true },
     { img: "http://placehold.it/350x150/111111", id: 1, isTitleVisible1: true },
