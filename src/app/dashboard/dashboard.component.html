@@ -28,12 +28,14 @@
 
     <!-- <div class="trays-container">
         <div class="trays"> -->
+
+            <!-- <div *ngFor="let masterslide of slides1"> -->
             <div class="sub-heading-for-sub-carosal">
                 <span class="dashboard-category-title faded-white-color">Continue Watching</span>
                 <span class="more-container faded-white-color">More >></span>
               </div>
             
-              <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" (afterChange)="afterChange($event)" [config]="movieconfig">
+              <ngx-slick-carousel class="carousel sub-carosal " #slickModal="slick-carousel" (afterChange)="afterChange($event)" [config]="movieconfig">
                 <div ngxSlickItem *ngFor="let slide of slides" class="slide">
                   <div class="carousel-slide-container" >
                     <div class="style_prevu_kit">
@@ -60,41 +62,10 @@
                   </div>
                 </div>
               </ngx-slick-carousel>
+            <!-- </div> -->
         <!-- </div>
     </div> -->
 
-    <div class="sub-heading-for-sub-carosal">
-        <span class="dashboard-category-title faded-white-color">Comedy</span>
-        <span class="more-container faded-white-color">More >></span>
-      </div>
-    
-      <ngx-slick-carousel class="carousel sub-carosal" #slickModal="slick-carousel" (afterChange)="afterChange($event)" [config]="movieconfig">
-        <div ngxSlickItem *ngFor="let slide of slides2" class="slide">
-          <div class="carousel-slide-container" >
-            <div class="style_prevu_kit">
-              <img class="dashboard-content-slide-image"  style="border-radius: 6px;" [src]=slide.img alt="" width="100%">
-    
-              <!-- normal div -->
-              <div class="dashboard-content-compact-div">
-                <span class="dashboard-content-compact-slide-title faded-white-color">{{slide['movie_title']}}</span>
-              </div>
-    
-              <!-- on hover div -->
-              <div class="dashboard-content-detail-div">
-                <img class="dashboard-content-detail-play-icon" src="../../assets/play-xxl.png" alt="">
-                <span class="dashboard-content-detail-title" >{{slide['movie_title']}}</span>
-                <div class="duration-div">
-                  <img style="float:left;" class="dashboard-content-detail-clock-icon" src="../../assets/clock-xxl.png" alt="">
-                  <span style="float:left;" class="dashboard-content-detail-duration-title">{{slide['duration']}}</span>
-                  <span class="dashboard-content-detail-quality-title">HD</span>
-                </div>
-    
-              </div>
-            </div>
-    
-          </div>
-        </div>
-      </ngx-slick-carousel>
 
 
   </div>

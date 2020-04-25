@@ -115,12 +115,8 @@ export class DashboardComponent implements OnInit {
   ];
 
   slides1 = [
-    { img: "http://placehold.it/350x150/000000", id: 0, isTitleVisible1: true },
-    { img: "http://placehold.it/350x150/111111", id: 1, isTitleVisible1: true },
-    { img: "http://placehold.it/350x150/333333", id: 2, isTitleVisible1: true },
-    { img: "http://placehold.it/350x150/666666", id: 3, isTitleVisible1: true },
-    { img: "http://placehold.it/350x150/333333", id: 4, isTitleVisible1: true },
-    { img: "http://placehold.it/350x150/666666", id: 5, isTitleVisible1: true }
+    { title: "Continue Watching", class:"ConW", id: 0, isTitleVisible1: true },
+    { title: "Comedy",class:"CoM", id: 1, isTitleVisible1: true }
   ];
 
   slideConfig = {
@@ -164,7 +160,14 @@ export class DashboardComponent implements OnInit {
   }
   afterChange(slidehcangeEvent){
     console.log('slidehcangeEvent: ', slidehcangeEvent);
-    console.log('last slide = ' ,$('.sub-carosal  .slick-active').last());
+
+
+
+    // for(var i = 0 ; i < this.slides1.length ;i++){
+    //   $('.' + this.slides1[i].class + '.slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
+    //   $('.' + this.slides1[i].class + '.slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
+    // }
+
     $('.sub-carosal  .slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
     $('.sub-carosal  .slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
   }
