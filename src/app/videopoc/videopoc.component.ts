@@ -62,6 +62,11 @@ export class VideopocComponent implements OnInit {
       }
   }
 
+  setGBitrates(bitrates){
+    console.log('bitrates11: ', bitrates);
+    this.bitrates = bitrates
+
+  }
   onClickStream(stream: IMediaStream) {
       console.log('stream: ', stream);
       this.api.pause();

@@ -28,6 +28,7 @@
     "ngx-slick-carousel": "^0.5.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.5.5",
+    "save": "^2.4.0",
     "slick-carousel": "^1.8.1",
     "tslib": "^1.9.0",
     "videogular2": "^7.0.1",

@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterContentInit, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
+declare var $: any;
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -80,7 +81,9 @@ export class DashboardComponent implements OnInit {
     "centerPadding": '0px',
     "dots": false,
     "prevArrow": false,
-    "nextArrow": false
+    "nextArrow": false,
+    cssEase: 'ease-in-out',
+    touchThreshold: 100
 
   };
   movieconfig = {
@@ -93,14 +96,25 @@ export class DashboardComponent implements OnInit {
     // "centerPadding": '0px',
     "dots": false,
     "prevArrow": false,
-    "nextArrow": false
+    "nextArrow": false,
+    cssEase: 'ease-in-out',
+    touchThreshold: 100
   };
 
   constructor() { }
 
   ngOnInit() {
-  }
+    $(document).ready(function() {
+      $('.sub-carosal  .slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
+    });
 
+  }
+  afterChange(slidehcangeEvent){
+    console.log('slidehcangeEvent: ', slidehcangeEvent);
+    console.log('last slide = ' ,$('.sub-carosal  .slick-active').last());
+    $('.sub-carosal  .slick-active').find('.style_prevu_kit').removeClass("right-slide-carousel");
+    $('.sub-carosal  .slick-active').last().find('.style_prevu_kit').addClass("right-slide-carousel");
+  }
   // sliderHoverEntered(div: string) {
   //   console.log("mouse enter : " + div);
   //   this.slides[div]['isTitleVisible'] = false

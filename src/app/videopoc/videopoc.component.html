@@ -12,10 +12,10 @@
 
       <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
 
-      <!-- <vg-quality-selector *ngIf="bitrates"
+      <vg-quality-selector *ngIf="bitrates"
                            (onBitrateChange)="setBitrate($event)"
                            [bitrates]="bitrates">
-      </vg-quality-selector> -->
+      </vg-quality-selector>
 
       <vg-mute></vg-mute>
       <vg-volume></vg-volume>
@@ -24,7 +24,7 @@
   </vg-controls>
 
   <video #media
-         (onGetBitrates)="bitrates = $event"
+         (onGetBitrates)="setGBitrates($event)"
          [vgMedia]="media"
          [vgHls]="currentStream.source"
          id="singleVideo"
